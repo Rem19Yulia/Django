@@ -24,3 +24,14 @@ urlpatterns = [
     path('shop/', views.shop, name='shop'),
     path('cart/', views.cart, name='cart'),
 ]
+
+#task4
+#from django.urls import path
+#from task4 import views
+
+#urlpatterns = [
+#    path('', views.index, name='index'),
+#    path('shop/', views.shop, name='shop'),
+#    path('cart/', views.cart, name='cart'),
+#    path('games/', views.games_view, name='games'),
+#]
