@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}Игры{% endblock %}
+
+{% block content %}
+<h1>Список игр</h1>
+<ul>
+    {% for game in games %}
+    <li>{{ game }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+</body>
+</html>
