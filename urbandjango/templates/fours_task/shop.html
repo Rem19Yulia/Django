@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
-</head>
-<body>
-    <h1>Магазин</h1>
-    <ul>
-        {% for item, price in items.items %}
-            <li>{{ item }} - {{ price }} <button>Мне это нужно</button></li>
-        {% endfor %}
-    </ul>
-    <a href="/">Вернуться на главную страницу</a>
-</body>
-</html>
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}Магазин{% endblock %}
+
+{% block content %}
+<h1>Магазин</h1>
+<ul>
+    {% for item, price in items.items %}
+    <li>{{ item }} - {{ price }} <button>Мне это нужно</button></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'index' %}">Вернуться на главную страницу</a>
+{% endblock %}
+
